@@ -1,7 +1,7 @@
-# android_device_xiaomi_davinci
-For building TWRP for Xiaomi Redmi K20 / Mi 9T
+# android_device_xiaomi_raphael
+For building TWRP for Xiaomi Redmi K20 Pro / Mi 9T Pro
 
-TWRP device tree for Xiaomi Redmi K20 / Mi 9T
+TWRP device tree for Xiaomi Redmi K20 Pro / Mi 9T Pro
 
 ## Features
 
@@ -33,21 +33,21 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/davinci" name="mauronofrio/android_device_xiaomi_davinci" remote="github" revision="android-9.0" />
+<project path="device/xiaomi/raphael" name="mauronofrio/android_device_xiaomi_raphael" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_davinci-eng
+lunch omni_raphael-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/davinci/recovery.img
+fastboot boot out/target/product/raphael/recovery.img
 ```
 
 ## Other Sources
